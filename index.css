@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root{
+    --color-white: hsl(0, 0%, 100%);
+    --color-stone-100: hsl(30, 54%, 90%);
+    --color-stone-150: hsl(30, 18%, 87%);
+    --color-stone-600: hsl(30, 10%, 34%);
+    --color-stone-900: hsl(24, 5%, 18%);
+    --color-brown-800: hsl(14, 45%, 36%);
+    --color-rose-800: hsl(332, 51%, 32%);
+    --color-rose-50: hsl(330, 100%, 98%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--color-stone-100);
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100dvh;
+    margin: 20px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 620px;
+    height: 100%;
+    background-color: var(--color-white);
+    padding: 30px 30px 40px 30px;
+    border-radius: 15px;
+    font-family: "Young Serif", serif;
+}
+
+.img_container img{
+    border-radius: 15px;
+    height: 250px;
+    width: 100%;
+}
+
+.text_container .title{
+    font-family: "Young Serif", serif;
+    font-size: 31px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: var(--color-stone-900);
+}
+
+.text_container .paragraph{
+    font-family: "Outfit", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--color-stone-600);
+    margin-bottom: 30px;
+}
+
+.cards_contain{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* Comienza Preparation Card */
+
+.card_item_preparation{
+    display: flex;
+    flex-direction: column;
+    background-color:var(--color-rose-50) ;
+    padding: 15px 15px 15px 30px; 
+}
+
+.card_item_preparation .title{
+    color: var(--color-rose-800);
+    font-weight: 700;
+    font-family: "Outfit", sans-serif;
+}
+
+.card_item_preparation .list{
+    margin-left: 25px;
+    color: var(--color-stone-600);
+    font-family: "Outfit", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.card_item_preparation .list .list-item{
+    padding: 3px;
+}
+
+.card_item_preparation .list .list-item strong{
+    margin-left: 10px;
+}
+
+
+/* Termina Preparation Card */
+
+/* Comienza Ingredients Card */
+
+.card_item_ingredients{
+    display: flex;
+    flex-direction: column;
+}
+
+.card_item_ingredients .title{
+    color: var(--color-brown-800);
+    font-size: 22px;
+}
+
+.card_item_ingredients .list{
+    margin-left: 25px;
+    color: var(--color-stone-600);
+    font-family: "Outfit", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+.list ul li::marker{
+   color: var(--color-brown-800);
+}
+
+.card_item_ingredients .list .list-item{
+    padding: 6px;
+}
+
+
+/* Termina Ingredients Card */
+
+/* Comienza Instruction Card */
+
+.card_item_instructions{
+    display: flex;
+    flex-direction: column;
+}
+
+.card_item_instructions .title{
+    color: var(--color-brown-800);
+    font-size: 22px;
+}
+
+.card_item_instructions .list{
+    margin-left: 25px;
+    color: var(--color-stone-600);
+    font-family: "Outfit", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    padding-top: 10px;
+}
+
+::marker{
+    color: var(--color-brown-800);
+    font-weight: bold;
+}
+
+.card_item_instructions .list .list-item{
+    padding: 5px;
+}
+
+.card_item_instructions .list .list-item p{
+    padding-left: 10px;
+    font-weight: 400;
+}
+
+/* Termina Instruction Card */
+
+/* Comienza Nutrition Card */
+
+.card_item_nutrition{
+    display: flex;
+    flex-direction: column;
+}
+
+.card_item_nutrition .title{
+    color: var(--color-brown-800);
+    font-size: 22px;
+}
+
+.card_item_nutrition .subtitle{
+    font-size: 14px;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: var(--color-stone-600);
+    font-family: "Outfit", sans-serif;;
+}
+
+.card_item_nutrition table{
+    font-family: "Outfit", sans-serif;
+    text-align: left;
+    padding-left: 10px;
+
+    
+}
+
+.card_item_nutrition table .type-list{
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--color-stone-600);
+    padding: 10px 10px 10px 30px;
+    
+   
+    
+}
+
+.card_item_nutrition table td{
+    padding-left: 100px;
+    border-bottom: 1px solid var(--color-stone-150);
+
+}
+
+.card_item_nutrition table .last{
+    border: none;
+}
+
+.card_item_nutrition table .dato{
+    color: var(--color-brown-800);
+    font-weight: bold;
+    
+}
+
+
